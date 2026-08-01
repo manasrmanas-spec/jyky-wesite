@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notice Management | JKYC</title>
+
+<link rel="stylesheet" href="../css/notice-admin.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📢 Notice Management</h1>
+
+    <form id="noticeForm">
+
+        <label>Notice Title</label>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Enter Notice Title"
+            required>
+
+        <label>Description</label>
+
+        <textarea
+            id="description"
+            rows="6"
+            placeholder="Write Notice Description"
+            required></textarea>
+
+        <label>Date</label>
+
+        <input
+            type="date"
+            id="date"
+            required>
+
+        <button
+            type="submit"
+            id="saveNotice">
+
+            Publish Notice
+
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>All Notices</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Title</th>
+
+                <th>Date</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="noticeTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script type="module" src="../js/notice-admin.js"></script>
+
+</body>
+</html>
