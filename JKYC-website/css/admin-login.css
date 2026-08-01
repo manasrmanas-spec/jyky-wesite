@@ -1,0 +1,346 @@
+/* ===========================
+   JKYC Admin Login
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial,sans-serif;
+
+    background:linear-gradient(135deg,#0d6efd,#00b894);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+}
+
+.login-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.login-card{
+
+    width:100%;
+
+    max-width:420px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    animation:fadeIn .6s ease;
+
+}
+
+.login-header{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.login-header img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    margin-bottom:10px;
+
+}
+
+.login-header h2{
+
+    color:#0d6efd;
+
+    margin-bottom:8px;
+
+}
+
+.login-header p{
+
+    color:#666;
+
+}
+/* ===========================
+   Input Fields
+=========================== */
+
+.input-group{
+
+    margin-bottom:18px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 8px rgba(13,110,253,.25);
+
+}
+
+/* ===========================
+   Login Options
+=========================== */
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+}
+
+.login-options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.login-btn{
+
+    width:100%;
+
+    padding:12px;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#0b5ed7;
+
+    transform:translateY(-2px);
+
+}
+
+.login-btn:disabled{
+
+    background:#888;
+
+    cursor:not-allowed;
+
+}
+
+/* ===========================
+   Links
+=========================== */
+
+.login-links{
+
+    text-align:center;
+
+    margin-top:18px;
+
+}
+
+.login-links a{
+
+    color:#0d6efd;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.login-links a:hover{
+
+    text-decoration:underline;
+
+}
+/* ===========================
+   Footer
+=========================== */
+
+.footer{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width:768px){
+
+    .login-card{
+
+        padding:25px;
+
+        max-width:95%;
+
+    }
+
+    .login-header img{
+
+        width:70px;
+        height:70px;
+
+    }
+
+    .login-header h2{
+
+        font-size:24px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .login-card{
+
+        padding:20px;
+
+    }
+
+    .login-header h2{
+
+        font-size:20px;
+
+    }
+
+    .input-group input{
+
+        font-size:14px;
+        padding:10px;
+
+    }
+
+    .login-btn{
+
+        font-size:15px;
+        padding:11px;
+
+    }
+
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.login-card{
+
+    animation:fadeIn .6s ease-in-out;
+
+}

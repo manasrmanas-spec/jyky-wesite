@@ -1,0 +1,201 @@
+/* =========================
+   JKYC Responsive CSS
+========================= */
+
+@media screen and (max-width:768px){
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+/* ===== Mobile Header ===== */
+
+.header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 15px;
+    gap:10px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+}
+
+.club-name h1{
+    font-size:18px;
+    line-height:1.2;
+}
+
+.club-name p{
+    font-size:11px;
+}
+
+/* ===== Mobile Navbar ===== */
+
+.navbar{
+    flex:1;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+}
+
+.navbar::-webkit-scrollbar{
+    display:none;
+}
+
+.navbar ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:center;
+    gap:18px;
+    padding:0 10px;
+    margin:0;
+    list-style:none;
+    white-space:nowrap;
+}
+
+.navbar ul li{
+    flex:0 0 auto;
+}
+
+.navbar ul li a{
+    display:block;
+    padding:8px 0;
+    font-size:15px;
+}
+
+/* Hero */
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:30px;
+    padding:30px 20px;
+}
+
+.hero-content h1{
+    font-size:34px;
+    line-height:1.3;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:330px;
+    height:auto;
+}
+
+/* ===== About Section Mobile ===== */
+
+.about{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+    padding:20px;
+}
+
+.about-image{
+    width:100%;
+    text-align:center;
+}
+
+.about-image img{
+    width:100%;
+    max-width:320px;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+
+.about-content{
+    width:100%;
+    text-align:center;
+}
+
+.about-content h2{
+    font-size:32px;
+    line-height:1.3;
+}
+
+.about-content p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.about-features{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+/* Leadership */
+
+.leaders{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.executives{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+/* Activities */
+
+.activity-container{
+    grid-template-columns:1fr;
+}
+
+/* Gallery */
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+/* Contact */
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+/* Footer */
+
+.footer-container{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:25px;
+}
+
+.footer-links,
+.footer-social{
+    margin-top:10px;
+}
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKYC Member ID Card</title>
+
+    <link rel="stylesheet" href="../css/id-card.css">
+</head>
+<body>
+
+<div class="id-container">
+
+    <div class="id-card">
+
+        <div class="top">
+
+            <img src="../images/logo.png" class="logo">
+
+            <h2>Jana Kalyan Youth Club</h2>
+
+            <p>Talamandali, Patrapada, Angul</p>
+
+        </div>
+
+        <div class="photo-box">
+
+            <img id="memberPhoto"
+     src="../images/default-user.png"
+     crossorigin="anonymous">
+
+        </div>
+
+        <div class="details">
+
+            <p><b>Name :</b> <span id="name">Loading...</span></p>
+
+            <p><b>Member ID :</b> <span id="memberId"></span></p>
+
+            <p><b>Mobile :</b> <span id="mobile"></span></p>
+
+            <p><b>Occupation :</b> <span id="occupation"></span></p>
+
+            <p><b>Blood Group :</b> <span id="bloodGroup">N/A</span></p>
+
+        </div>
+
+       <div id="qrcode"></div>
+
+    </div>
+
+</div>
+
+<div class="card-buttons">
+    <button id="downloadBtn">⬇️ Download ID Card</button>
+    <button id="printBtn">🖨️ Print ID Card</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script type="module" src="../js/member-id.js"></script>
+
+</body>
+</html>

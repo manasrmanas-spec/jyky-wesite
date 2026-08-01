@@ -1,0 +1,101 @@
+.notice-page{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.notice-page h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d6efd;
+}
+
+.notice-card{
+    background:#fff;
+    border-left:6px solid #0d6efd;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.notice-card h2{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.notice-card small{
+    color:#666;
+    display:block;
+    margin-bottom:15px;
+}
+
+.notice-card p{
+    color:#444;
+    line-height:1.7;
+}
+
+@media(max-width:768px){
+
+.notice-page{
+    padding:15px;
+}
+
+.notice-card{
+    padding:15px;
+}
+
+.notice-card h2{
+    font-size:20px;
+}
+
+}
+/* Search Box */
+.search-box{
+    margin:20px 0;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px 15px;
+    font-size:16px;
+    border:2px solid #0d6efd;
+    border-radius:8px;
+    outline:none;
+}
+
+/* Notice Card */
+.notice-card{
+    position:relative;
+    background:#fff;
+    border-left:6px solid #0d6efd;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.notice-card:hover{
+    transform:translateY(-5px);
+}
+
+/* NEW Badge */
+.new-badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:red;
+    color:#fff;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
